@@ -14,7 +14,7 @@ body {
   
 /* Container för kortet */
 .card {
-  background: url("images/Bakgrund inbjudan.jpg") no-repeat center center;
+  background: url("Bakgrund inbjudan.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   width: 700px;
