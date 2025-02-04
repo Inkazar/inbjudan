@@ -1,0 +1,186 @@
+/* Grundinställningar */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barriecito Regular", "Arial", sans-serif;
+  background: hsl(0, 46%, 58%);
+}
+  
+/* Bakgrund (byt gärna till egen bild) */
+body {
+  background-color: transparent;
+}
+  
+/* Container för kortet */
+.card {
+  background: url("images/Bakgrund inbjudan.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 700px;
+  max-width: 90%;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  
+/* Rubrik */
+.card h1 {
+  font-family: "Barriecito Regular";
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  color: #121b0f;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.8); /* Tunn bakgrund */
+  padding: 2px; /* Minskar padding för att göra det tightare mot texten */
+}
+  
+/* Undertext/rubrik */
+.subtitle {
+  text-align: center;
+  font: 1em sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #020202;
+  background-color: rgba(255, 255, 255, 0.8); /* Tunn bakgrund */
+  padding: 2px; /* Minskar padding för att göra det tightare mot texten */
+  border-radius: 6px;
+  display: block;
+  margin-top: auto;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 300%);
+}
+  
+/* Avsnittstexter */
+.card p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin: 10px 0;
+  color: #333;
+}
+  
+/* Ikoner för superhjältar, tv-spel och Brynäs */
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+  
+.icons img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+/* OSA-information */
+.osa {
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8); /* Tunn bakgrund */
+  padding: 2px; /* Minskar padding för att göra det tightare mot texten */
+  border-radius: 6px;
+  display: block;
+  margin-top: auto;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 400%);
+}
+.what {
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8); /* Tunn bakgrund */
+  padding: 2px; /* Minskar padding för att göra det tightare mot texten */
+  border-radius: 6px;
+  display: block;
+  margin-top: auto;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 200%);
+}
+.where {
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8); /* Tunn bakgrund */
+  padding: 2px; /* Minskar padding för att göra det tightare mot texten */
+  border-radius: 6px;
+  display: block;
+  margin-top: auto;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 175%);
+}
+  
+.when {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8); /* Tunn bakgrund */
+  padding: 2px; /* Minskar padding för att göra det tightare mot texten */
+  border-radius: 6px;
+  margin-top: auto;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 135%);
+}
+  
+/* "Välkommen!"-text */
+.valkommen {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8); /* Tunn bakgrund */
+  padding: 2px; /* Minskar padding för att göra det tightare mot texten */
+  border-radius: 6px;
+  margin-top: auto;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 400%);
+}
+  
+/* Sidfot eller extra info */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #999;
+}
+  
+/* Responsiv design för mindre skärmar */
+@media (max-width: 600px) {
+  .card h1 {
+    font-size: 1.6em;
+  }
+  
+  .subtitle {
+    font-size: 1em;
+  }
+  
+  .card p {
+    font-size: 1em;
+  }
+  
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icons img {
+    margin-bottom: 10px;
+  }
+}
